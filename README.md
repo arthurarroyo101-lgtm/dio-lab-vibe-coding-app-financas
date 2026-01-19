@@ -1,113 +1,95 @@
-# 💸 App de Finanças Pessoais do Venilton com Vibe Coding
+# 💸 App de Planejamento do Arthur com Vibe Coding
 
 Este projeto foi desenvolvido como um Desafio de Projeto da DIO de Vibe Coding utilizando o Lovable e o Copilot Web. A proposta é criar um aplicativo de organização financeira pessoal baseado em interações em linguagem natural.
 
 ---
+´´´
+Quero que você ajuste o aplicativo "Planner 2026" com foco nos seguintes pontos:
+1. Integração de Hábitos e Metas na Página Inicial:
+- Os hábitos e metas criados nas páginas “Hábitos” e “Metas” devem aparecer automaticamente na página “Início”.
+- A tela inicial deve mostrar:
+  - Parte superior: hábitos do dia com checkboxes (☐ / ☑).
+  - Parte inferior: metas em andamento e próximas metas.
+- Isso garante que o usuário veja tudo consolidado logo ao abrir o app.
 
-## 📝 PRD Refinado no Copilot Web
+2. Chatbot com IA:
+- O aplicativo deve incluir um chatbot baseado em IA, acessível pelo menu inferior.
+- O chatbot deve permitir que o usuário converse sobre:
+  - Hábitos concluídos (“Hoje fui à academia”).
+  - Progresso de metas (“Quantos livros já li este ano?”).
+  - Planos futuros (“Quero começar curso de Python em agosto”).
+- O chatbot deve responder de forma motivacional e prática, além de sugerir ajustes quando necessário.
+- O chatbot deve ter integração com as abas de Hábitos e Metas, permitindo registrar ou atualizar informações diretamente pela conversa.
 
-```markdown
-# PRD - App de Organização Financeira com Conversa Natural
+3. Tema Claro/Escuro:
+- O aplicativo deve oferecer opção de alternar entre tema claro e escuro.
+- O usuário pode escolher manualmente ou deixar no modo automático (baseado no sistema do dispositivo).
+- Essa configuração deve estar disponível nas opções de “Configurações”.
 
-## Visão Geral
-Criar um aplicativo de organização de finanças pessoais que funcione por meio de conversas em linguagem natural.  
-O objetivo é tornar o controle financeiro mais intuitivo, acessível e livre de burocracias como planilhas ou formulários complexos.
-
-## Problema a Resolver
-Muitas pessoas abandonam o controle financeiro por acharem os aplicativos atuais complicados, exigindo entradas manuais e oferecendo pouca personalização.  
-Queremos resolver isso com uma experiência conversacional fluida e recomendações automáticas que se adaptam ao perfil do usuário.
-
-## Público-Alvo
-Pessoas que desejam começar a organizar suas finanças de forma prática e sem complicações — especialmente iniciantes que não têm familiaridade com apps financeiros tradicionais.
-
-## Funcionalidades-Chave
-1. Registro de gastos via chat: O usuário descreve seus gastos em linguagem natural, como “gastei R$ 30 no mercado”.
-2. Classificação automática de transações: O app identifica e categoriza os gastos com base no texto.
-3. Definição e acompanhamento de metas financeiras: O usuário pode criar metas como “economizar R$ 500 até o fim do mês”.
-4. Dicas personalizadas do Agente Financeiro: Um assistente virtual que sugere formas de economizar com base nos hábitos do usuário.
-5. Relatórios simples e personalizados: Visualizações claras dos gastos, metas e progresso, adaptadas ao estilo do usuário.
-
-## Princípio de Design Universal
-A solução será construída com base em Design Universal, garantindo que o aplicativo ofereça uma experiência acessível, intuitiva e inclusiva para o maior número possível de pessoas — independentemente de idade, nível de alfabetização digital, limitações físicas ou cognitivas.  
-Isso inclui:
-- Interface clara e legível
-- Navegação simples e sem sobrecarga de informações
-- Compatibilidade com leitores de tela e comandos por voz
-- Feedbacks visuais e auditivos para facilitar o uso
-
-## Entregável da IA
-Gerar um plano de MVP contendo:
-- As principais telas (chat, metas, relatórios)
-- Recursos técnicos necessários (NLP, categorização automática, motor de recomendações)
-- Estratégia de validação inicial com usuários reais
-- Linguagem acessível e tom educativo, em português
-- Aplicação dos princípios de Design Universal desde o protótipo
-```
-
----
-
-## 💬 Interações com o Lovable
-
-> Crie um App de Finanças Pessoais com base no seguinte PRD (Product Requirements Document): {PRD}
-
-> Tentei criar uma meta chamada Reserva de Emergencia, mas ela não apareceu no componente. A impressão que tive foi que apenas o Assistente Financeiro a reconheceu, poderia verificar? Além disso, onde vejo os gráficos e extrato?
-
-> Sim (Quer que eu adicione uma tela de relatórios com gráficos e extrato detalhado das transações?)
-
+Objetivo final:
+- Garantir que hábitos e metas apareçam consolidados na página inicial.
+- Criar uma experiência interativa com o chatbot de IA.
+- Permitir personalização visual com tema claro/escuro.
+´´´
 ---
 
 ## 🎯 Resultado Final
 
-Acesse o protótipo funcional no Lovable:  
-**[conversa-fin-amigo.lovable.app](https://conversa-fin-amigo.lovable.app/)**
+Acesse a pré-visualização no Lovable:  
+**https://id-preview--5f6b6a03-bb38-4d0e-be64-d6e203c2d8df.lovable.app/?__lovable_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMERmbnNLQjNVcGhDNVBYUEdKajd4WFpadlk0MiIsInByb2plY3RfaWQiOiI1ZjZiNmEwMy1iYjM4LTRkMGUtYmU2NC1kNmUyMDNjMmQ4ZGYiLCJub25jZSI6ImFiZmIyZmRlMzI0OTEyMzA1YWQ2ZDI3MTBmNDU5MTU4IiwiaXNzIjoibG92YWJsZS1hcGkiLCJzdWIiOiI1ZjZiNmEwMy1iYjM4LTRkMGUtYmU2NC1kNmUyMDNjMmQ4ZGYiLCJhdWQiOlsibG92YWJsZS1hcHAiXSwiZXhwIjoxNzY5NDY5NzE5LCJuYmYiOjE3Njg4NjQ5MTksImlhdCI6MTc2ODg2NDkxOX0.E2nG8sQokdALqJukDqki_ItVgQh27eb5FHjEVHbzVo8**
 
-<img width="1920" height="945" alt="image" src="https://github.com/user-attachments/assets/88ef611d-970e-4377-918a-918714311218" />
+<img width="1323" height="537" alt="image" src="https://github.com/user-attachments/assets/f5735c55-81c1-476e-9bfa-7574a7b71f87" />
 
----
 
 ## 🔍 Funcionalidades do App de Organização Financeira
 
-### 1. Dashboard Financeiro
-- Exibe um panorama claro das finanças pessoais:
-  - **Receitas**: Total de ganhos registrados
-  - **Despesas**: Total de gastos
-  - **Saldo**: Diferença entre receitas e despesas
-- Interface simples e direta para facilitar a compreensão
+# 📲 Planner 2026
 
-### 2. Assistente Financeiro
-- Personagem conversacional que interage com o usuário
-- Incentiva a conexão de contas e cartões para uma visão completa das finanças
-- Oferece suporte emocional e motivacional
+## 🎯 Função principal
+O **Planner 2026** é um aplicativo para **organizar hábitos diários e metas pessoais**, ajudando o usuário a manter disciplina, acompanhar progresso e planejar objetivos ao longo do ano.
 
-### 3. Registro de Transações via Chat
-- Campo de entrada para o usuário digitar mensagens em linguagem natural
-- Permite registrar gastos e interagir com o assistente de forma fluida
+---
 
-### 4. Metas Financeiras
-- Área dedicada à criação e acompanhamento de objetivos financeiros
-- Sugestão proativa para o usuário definir metas
-- Botão de ação para adicionar novas metas
+## ⚙️ Funcionalidades atuais
+- Cadastro de hábitos e metas em páginas próprias.  
+- Página **Início** como painel central (em ajustes para consolidar hábitos e metas automaticamente).  
+- Edição de hábitos e metas já cadastrados.  
+- Notificações push para lembrar hábitos e prazos de metas.  
+- Página de login/cadastro para salvar perfil e histórico.  
+- Tema claro/escuro para personalização visual.  
+- Chat IA no menu inferior para conversar sobre hábitos, metas e planos.  
 
-### 5. Relatórios Personalizados
-- Visualizações simples e adaptadas ao estilo do usuário
-- Acompanhamento de metas e progresso financeiro
+---
 
-### 6. Design Universal
-- Interface acessível e inclusiva:
-  - Linguagem simples
-  - Navegação clara
-  - Compatibilidade com leitores de tela e comandos por voz
-  - Feedbacks visuais e auditivos para facilitar o uso
+## 💡 Melhorias planejadas
+- **Medalhas e conquistas** (ex.: “100 dias seguidos de leitura”).  
+- **Relatórios inteligentes** com insights sobre desempenho.  
+- **Integração com Google Calendar/Outlook** para sincronizar metas.  
+- **Integração com apps de saúde** (ex.: passos, treinos).  
+- **Grupos de metas** para colaboração (ex.: “Estudar inglês juntos”).  
+- **Ranking coletivo** para motivação social.  
+- **Alertas inteligentes** (ex.: “Você está atrasado na meta da CNH”).  
+- **Chat IA mais avançado**:  
+  - Salvar histórico de conversas.  
+  - Respostas mais curtas e objetivas.  
+  - Sugestões rápidas de perguntas acima da área de digitação.  
+  - Direcionar hábitos e metas enviados pelo chat para suas áreas corretas.  
+- **Lembrete como alarme configurável** (data/hora exata, repetição, som/vibração).  
+
+---
+
+## 🎯 Resultado esperado
+O Planner 2026 evolui de um **organizador pessoal** para um **assistente inteligente e social**, capaz de motivar, analisar, integrar e conectar pessoas em torno de suas metas.
 
 ---
 
 ## 🧠 Reflexão
 
 ### O que funcionou bem?  
-O refinamento do PRD previamente feito no Copilot ajudou muito, pois os créditos do Lovable acabaram em apenas 3 interações.
+O chat funciona normalmente, e a criação dos hábitos e das metas.
 
 ### O que não funcionou como o esperado?  
-Esperava poder interagir mais vezes gratuitamente com o Lovable, mas as interações feitas já foram de grande valia para aprender mais sobre Vibe Coding.
+Esperava que os habitos e metas criados no chat fossem transferidos para a pagina inicial.
 
 ### O que aprendi sobre conversar com IAs?  
-Aprendi que é basicamente igual a conversar com uma pessoa: quanto mais detalhes e clareza você dá, melhor é a interação.
+Aprendi que sempre deve detalhar bem, quanto mais informações dadas melhor.
